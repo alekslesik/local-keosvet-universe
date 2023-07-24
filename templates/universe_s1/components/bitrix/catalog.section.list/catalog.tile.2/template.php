@@ -49,6 +49,10 @@ $arVisual = $arResult['VISUAL'];
         ]
     ]) ?>
         <?php foreach ($arResult['SECTIONS'] as $arSection) {
+            if ($arSection['SECTION_PAGE_URL'] === "/catalog/analogi/") {
+                # code...
+                continue;
+            }
 
             $sId = $sTemplateId.'_'.$arSection['ID'];
             $sAreaId = $this->GetEditAreaId($sId);
