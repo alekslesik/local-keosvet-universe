@@ -49,6 +49,8 @@ $arVisual = $arResult['VISUAL'];
         ]
     ]) ?>
         <?php foreach ($arResult['SECTIONS'] as $arSection) {
+
+
             if ($arSection['SECTION_PAGE_URL'] === "/catalog/analogi/") {
                 # code...
                 continue;

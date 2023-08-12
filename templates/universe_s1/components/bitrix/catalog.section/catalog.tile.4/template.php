@@ -174,6 +174,7 @@ include(__DIR__ . '/parts/sku.php');
         continue;
     }
 
+
     $sId = $sTemplateId . '_' . $arItem['ID'];
     $sAreaId = $this->GetEditAreaId($sId);
     $this->AddEditAction($sId, $arItem['EDIT_LINK']);
